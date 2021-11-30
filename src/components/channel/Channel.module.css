@@ -1,0 +1,24 @@
+.channel {
+    width: 152px;
+    height: 158px;
+    box-shadow: 0 6px 30px rgba(65, 84, 152, 0.08);
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}

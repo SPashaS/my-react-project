@@ -1,5 +1,7 @@
 .App {
     background-color: #f2f2f2;
+    width: 1440px;
+    margin: 0 auto;
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr;
@@ -23,8 +25,21 @@
     padding: 32px 32px 20px;
 }
 
+.block-title {
+    margin-bottom: 32px;
+}
+
 .block-content {
     display: grid;
     grid-template-columns: repeat(3, 336px);
     gap: 32px;
+}
+
+.channels {
+    margin-bottom: 38px;
+}
+
+.channels-content {
+    display: flex;
+    justify-content: space-between;
 }
