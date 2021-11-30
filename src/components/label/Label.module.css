@@ -1,0 +1,10 @@
+.label {
+    background: rgba(80, 62, 157, 0.1);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 145% ;
+    text-align: center;
+    color: #503E9D;
+}

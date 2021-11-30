@@ -1,0 +1,15 @@
+.time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    color: #878787;
+}
+
+.timeIcon {
+    margin-right: 7px;
+}

@@ -1,0 +1,45 @@
+.headliner {
+    display: flex;
+    align-items: center;
+}
+.thumbnailImg {
+    border-radius: 12px;
+}
+.info {
+    margin-left: 24px;
+    flex-grow: 1;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 3px 0 10px;
+}
+.rating {
+    display: grid;
+    grid-template-columns: 72px 72px;
+    margin-bottom: 14px;
+}
+.like,
+.dislike {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+}
+.like {
+    color: #626264;
+}
+.dislike {
+    color: #878787;
+}
+.like-icon,
+.dislikeIcon {
+    margin-right: 4px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
