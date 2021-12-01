@@ -29,6 +29,10 @@
     margin-bottom: 32px;
 }
 
+.headlines {
+    margin-bottom: 38px;
+}
+
 .block-content {
     display: grid;
     grid-template-columns: repeat(3, 336px);
@@ -40,6 +44,11 @@
 }
 
 .channels-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-content {
     display: flex;
     justify-content: space-between;
 }

@@ -1,0 +1,29 @@
+.news {
+    width: 340px;
+}
+
+.newsImg {
+    border-radius: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 176px;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockTitle {
+    width: 235px;
+}
+
+.inner {
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 8px;
+}
