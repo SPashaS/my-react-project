@@ -1,13 +1,13 @@
 import './App.css';
-import Headliner from './components/headliner/Headliner';
+import Headline from './components/headline/Headline';
 import Channel from './components/channel/Channel';
 
-import image1 from "./assets/images/headliner/img1.jpg"
-import image2 from "./assets/images/headliner/img2.jpg"
-import image3 from "./assets/images/headliner/img3.jpg"
-import image4 from "./assets/images/headliner/img4.jpg"
-import image5 from "./assets/images/headliner/img5.jpg"
-import image6 from "./assets/images/headliner/img6.jpg"
+import image1 from "./assets/images/headline/img1.jpg"
+import image2 from "./assets/images/headline/img2.jpg"
+import image3 from "./assets/images/headline/img3.jpg"
+import image4 from "./assets/images/headline/img4.jpg"
+import image5 from "./assets/images/headline/img5.jpg"
+import image6 from "./assets/images/headline/img6.jpg"
 
 
 import fox from "./assets/images/channel/fox.png"
@@ -37,15 +37,15 @@ function App() {
 
         </section>
 
-        <section className="headliners">
+        <section className="headlines">
             <h2 className="block-title">Today’s Headlines</h2>
           <div className="block-content">
-            <Headliner labelText="BBC NEWS" thumbnail={image1} title="Hate speech vs free speech"/>
-            <Headliner labelText="BBC NEWS" thumbnail={image2} title="Ontario Liberal leadership"/>
-            <Headliner labelText="BBC NEWS" thumbnail={image3} title="Victim of Scarborough"/>
-            <Headliner labelText="ABC NEWS" thumbnail={image4} title="Mother who left her baby"/>
-            <Headliner labelText="CW6 NEWS" thumbnail={image5} title="Mother of Stefanie Rengel"/>
-            <Headliner labelText="CNN NEWS" thumbnail={image6} title="World   Cup: Popular items"/>
+            <Headline likes="10.8k" dislikes="1.4k" time="2:00pm" labelText="BBC NEWS" thumbnail={image1} title="Hate speech vs free speech"/>
+            <Headline likes="10.2k" dislikes="2.2k" time="2:20pm" labelText="BBC NEWS" thumbnail={image2} title="Ontario Liberal leadership"/>
+            <Headline likes="5" dislikes="55.2k" time="2:40pm" labelText="BBC NEWS" thumbnail={image3} title="Victim of Scarborough"/>
+            <Headline likes="15k" dislikes="1k" time="3:00pm" labelText="ABC NEWS" thumbnail={image4} title="Mother who left her baby"/>
+            <Headline likes="10" dislikes="4k" time="4:00pm" labelText="CW6 NEWS" thumbnail={image5} title="Mother of Stefanie Rengel"/>
+            <Headline likes="10.2k" dislikes="2k" time="6:00pm" labelText="CNN NEWS" thumbnail={image6} title="World   Cup: Popular items"/>
           </div>
         </section>
         

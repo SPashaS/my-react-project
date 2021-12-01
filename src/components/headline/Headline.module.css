@@ -1,4 +1,4 @@
-.headliner {
+.headline {
     display: flex;
     align-items: center;
 }
@@ -9,12 +9,7 @@
     margin-left: 24px;
     flex-grow: 1;
 }
-.title {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    margin: 3px 0 10px;
-}
+
 .rating {
     display: grid;
     grid-template-columns: 72px 72px;
