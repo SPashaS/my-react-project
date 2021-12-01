@@ -38,12 +38,31 @@
     border-radius: 10px;
 }
 
+.hr {
+    color: red;
+    height: 2px;
+    border-radius: 1px;
+}
 
 /* sidebar */
 
 .sidebar {
     grid-area: s;
     background-color: #f8f8f8;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.logo {
+    height: 112px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    padding: 0 16px;
 }
 
 

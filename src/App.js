@@ -5,6 +5,16 @@ import Channel from './components/channel/Channel';
 import burger from "./assets/images/header/burger.svg";
 import avatar from "./assets/images/header/ava.jpg";
 
+import logo from "./assets/images/logo.png";
+
+import home from "./assets/images/nav-item/home.svg";
+import explore from "./assets/images/nav-item/explore.svg";
+import saved from "./assets/images/nav-item/saved.svg";
+import subscriptions from "./assets/images/nav-item/subscriptions.svg";
+import messages from "./assets/images/nav-item/messages.svg";
+import settings from "./assets/images/nav-item/settings.svg";
+import logout from "./assets/images/nav-item/logout.svg";
+
 
 import image1 from "./assets/images/headline/img1.jpg";
 import image2 from "./assets/images/headline/img2.jpg";
@@ -31,6 +41,7 @@ import cnn from "./assets/images/channel/cnn.png";
 import News from './components/news/News';
 import SortItem from './components/sort-item/SortItem';
 import Search from './components/search/Search';
+import NavItem from './components/nav-item/NavItem';
 
 
 function App() {
@@ -45,12 +56,28 @@ function App() {
         <div className="right-block">
           <Search/>
           <button className="burger-btn">
-            <img className="burger-img" src={burger}/>
+            <img className="burger-img" src={burger} alt="Menu"/>
           </button>
           <img className="avatar-img" src={avatar}/>
         </div>
       </header>
-      <asside className="sidebar">Sidebar</asside>
+      <asside className="sidebar">
+        <div className="logo">
+          <a className="logo-link">
+            <img className="logo-img" src={logo} alt="Daily"/>
+          </a>
+        </div>
+        <nav className="menu">
+          <NavItem text="Home" icon={home}/>
+          <NavItem text="Explore" icon={explore}/>
+          <NavItem text="Saved" icon={saved}/>
+          <NavItem text="Subscriptions" icon={subscriptions}/>
+          <NavItem text="Messages" icon={messages}/>
+          <NavItem text="Settings" icon={settings} style={{marginBottom:"150px"}}/>
+          <NavItem text="Logout" icon={logout}/>
+        </nav>
+  
+      </asside>
       <main className="main">
         <section className="channels">
           <h2 className="block-title">Explore Channels</h2>

@@ -1,0 +1,25 @@
+.navItem {
+    list-style-type: none;
+    height: 56px;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.navItem:hover {
+    background-color: #4f3e9d3d;
+}
+
+.navItem:hover .navLink  {
+    font-weight: 700;
+    color: #503E9D;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #878787;
+}
+
+.wrapper {
+    display: flex;
+    gap: 24px;
+}
