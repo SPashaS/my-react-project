@@ -13,13 +13,41 @@
 
 .header {
     grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 32px 0;
 }
+
+.right-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar-img {
+    border-radius: 50%;
+}
+
+.burger-btn {
+    background-color: #503E9D;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/* sidebar */
 
 .sidebar {
     grid-area: s;
     background-color: #f8f8f8;
 }
 
+
+/* main */
 .main {
     grid-area: c;
     padding: 32px 32px 20px;
@@ -28,6 +56,12 @@
 .block-title {
     margin-bottom: 32px;
 }
+
+.sorting {
+    display: flex;
+    gap: 21px;
+}
+
 
 .headlines {
     margin-bottom: 38px;

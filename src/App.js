@@ -2,31 +2,54 @@ import './App.css';
 import Headline from './components/headline/Headline';
 import Channel from './components/channel/Channel';
 
-import image1 from "./assets/images/headline/img1.jpg"
-import image2 from "./assets/images/headline/img2.jpg"
-import image3 from "./assets/images/headline/img3.jpg"
-import image4 from "./assets/images/headline/img4.jpg"
-import image5 from "./assets/images/headline/img5.jpg"
-import image6 from "./assets/images/headline/img6.jpg"
-
-import imgN1 from "./assets/images/news/img1.jpg"
-import imgN2 from "./assets/images/news/img2.jpg"
-import imgN3 from "./assets/images/news/img3.jpg"
+import burger from "./assets/images/header/burger.svg";
+import avatar from "./assets/images/header/ava.jpg";
 
 
-import fox from "./assets/images/channel/fox.png"
-import cw6 from "./assets/images/channel/cw6.png"
-import abc from "./assets/images/channel/abc.png"
-import al from "./assets/images/channel/al.png"
-import bbc from "./assets/images/channel/bbc.png"
-import cnn from "./assets/images/channel/cnn.png"
+import image1 from "./assets/images/headline/img1.jpg";
+import image2 from "./assets/images/headline/img2.jpg";
+import image3 from "./assets/images/headline/img3.jpg";
+import image4 from "./assets/images/headline/img4.jpg";
+import image5 from "./assets/images/headline/img5.jpg";
+import image6 from "./assets/images/headline/img6.jpg";
+
+import imgN1 from "./assets/images/news/img1.jpg";
+import imgN2 from "./assets/images/news/img2.jpg";
+import imgN3 from "./assets/images/news/img3.jpg";
+
+import sortIcon1 from "./assets/images/sort-item/location.svg";
+import sortIcon2 from "./assets/images/sort-item/pie.svg";
+import sortIcon3 from "./assets/images/sort-item/calendar.svg";
+
+
+import fox from "./assets/images/channel/fox.png";
+import cw6 from "./assets/images/channel/cw6.png";
+import abc from "./assets/images/channel/abc.png";
+import al from "./assets/images/channel/al.png";
+import bbc from "./assets/images/channel/bbc.png";
+import cnn from "./assets/images/channel/cnn.png";
 import News from './components/news/News';
+import SortItem from './components/sort-item/SortItem';
+import Search from './components/search/Search';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="header">Header</header>
+      <header className="header">
+        <div className="sorting">
+            <SortItem sortIcon={sortIcon1} text="San Francisco, California"/>
+            <SortItem sortIcon={sortIcon2} text="Analysis"/>
+            <SortItem sortIcon={sortIcon3} text="Monthly"/>
+        </div>
+        <div className="right-block">
+          <Search/>
+          <button className="burger-btn">
+            <img className="burger-img" src={burger}/>
+          </button>
+          <img className="avatar-img" src={avatar}/>
+        </div>
+      </header>
       <asside className="sidebar">Sidebar</asside>
       <main className="main">
         <section className="channels">
