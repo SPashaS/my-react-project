@@ -2,7 +2,6 @@
     background-color: #f2f2f2;
     width: 1440px;
     margin: 0 auto;
-    height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 304px 1fr;
@@ -29,19 +28,104 @@
     border-radius: 50%;
 }
 
-.burger-btn {
-    background-color: #503E9D;
-    width: 48px;
-    height: 48px;
-    border: 0;
-    cursor: pointer;
-    border-radius: 10px;
+.btn {
+    border: 0; 
 }
 
-.hr {
-    color: red;
-    height: 2px;
+.btn--violet {
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #503E9D;
+}
+
+.burger-btn {
+    width: 48px;
+}
+
+.lines {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.line {
+    height: 0;
+    border: 1px solid white;
     border-radius: 1px;
+}
+
+.line--gray {
+    border-color: #E8E8E8;
+}
+
+/* subscribe*/
+
+.subscribe {
+    width: 240px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 32px 96px rgba(0, 0, 0, 0.06);
+    padding: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.flame {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(251, 109, 58, 0.1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.subscribe-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+    width: 165px;
+}
+
+.subscribe-title span{
+    color: #FB6D3A;
+    text-decoration: underline;
+}
+.subscribe-text {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.subscribe-btn {
+    padding: 16px 17px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.subscribe-btn span {
+    margin-right: 12px;
 }
 
 /* sidebar */
@@ -51,6 +135,7 @@
     background-color: #f8f8f8;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
+    padding: 0 16px;
 }
 
 .logo {
@@ -61,9 +146,6 @@
     align-items: center;
 }
 
-.menu {
-    padding: 0 16px;
-}
 
 
 /* main */

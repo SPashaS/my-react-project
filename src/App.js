@@ -15,6 +15,10 @@ import messages from "./assets/images/nav-item/messages.svg";
 import settings from "./assets/images/nav-item/settings.svg";
 import logout from "./assets/images/nav-item/logout.svg";
 
+import close from "./assets/images/subscribe/close.svg";
+import flame from "./assets/images/subscribe/flame.svg";
+import subarr from "./assets/images/subscribe/arrow.svg";
+
 
 import image1 from "./assets/images/headline/img1.jpg";
 import image2 from "./assets/images/headline/img2.jpg";
@@ -55,7 +59,7 @@ function App() {
         </div>
         <div className="right-block">
           <Search/>
-          <button className="burger-btn">
+          <button className="burger-btn btn btn--violet">
             <img className="burger-img" src={burger} alt="Menu"/>
           </button>
           <img className="avatar-img" src={avatar}/>
@@ -73,10 +77,31 @@ function App() {
           <NavItem text="Saved" icon={saved}/>
           <NavItem text="Subscriptions" icon={subscriptions}/>
           <NavItem text="Messages" icon={messages}/>
-          <NavItem text="Settings" icon={settings} style={{marginBottom:"150px"}}/>
+          <NavItem text="Settings" icon={settings} style={{marginBottom:"100px"}}/>
           <NavItem text="Logout" icon={logout}/>
         </nav>
-  
+        <div className="lines">
+          <div className="line line--gray"></div>
+          <div className="line"></div>
+        </div>
+
+        <div className="subscribe">
+          <button className="subscribe-close">
+            <img src={close}/>
+          </button>
+          <div className="flame">
+            <img src={flame}/>
+          </div>
+          <h2 className="subscribe-title">Subscribe to our new 
+          plan <span>$25</span>
+          </h2>
+          <p className="subscribe-text">It is a limited time offer that will expire soon.</p>
+          <button className="subscribe-btn btn btn--violet">
+            <span>Subscribe now</span>
+            <img src={subarr}/>
+          </button>
+        </div>
+
       </asside>
       <main className="main">
         <section className="channels">
