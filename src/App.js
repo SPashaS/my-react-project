@@ -1,6 +1,11 @@
 import './App.css';
 import Headline from './components/headline/Headline';
 import Channel from './components/channel/Channel';
+import News from './components/news/News';
+import SortItem from './components/sort-item/SortItem';
+import Search from './components/search/Search';
+import NavItem from './components/nav-item/NavItem';
+import TitleBlock from './components/title-block/TitleBlock';
 
 import burger from "./assets/images/header/burger.svg";
 import avatar from "./assets/images/header/ava.jpg";
@@ -19,7 +24,6 @@ import close from "./assets/images/subscribe/close.svg";
 import flame from "./assets/images/subscribe/flame.svg";
 import subarr from "./assets/images/subscribe/arrow.svg";
 
-
 import image1 from "./assets/images/headline/img1.jpg";
 import image2 from "./assets/images/headline/img2.jpg";
 import image3 from "./assets/images/headline/img3.jpg";
@@ -35,18 +39,12 @@ import sortIcon1 from "./assets/images/sort-item/location.svg";
 import sortIcon2 from "./assets/images/sort-item/pie.svg";
 import sortIcon3 from "./assets/images/sort-item/calendar.svg";
 
-
 import fox from "./assets/images/channel/fox.png";
 import cw6 from "./assets/images/channel/cw6.png";
 import abc from "./assets/images/channel/abc.png";
 import al from "./assets/images/channel/al.png";
 import bbc from "./assets/images/channel/bbc.png";
 import cnn from "./assets/images/channel/cnn.png";
-import News from './components/news/News';
-import SortItem from './components/sort-item/SortItem';
-import Search from './components/search/Search';
-import NavItem from './components/nav-item/NavItem';
-
 
 function App() {
   return (
@@ -105,7 +103,7 @@ function App() {
       </asside>
       <main className="main">
         <section className="channels">
-          <h2 className="block-title">Explore Channels</h2>
+          <TitleBlock title="Explore Channels"/>
           <div className="channels-content">
             <Channel text="FOX NEWS" logo={fox}/>
             <Channel text="CW6 NEWS" logo={cw6}/>
@@ -117,7 +115,7 @@ function App() {
         </section>
 
         <section className="headlines">
-            <h2 className="block-title">Today’s Headlines</h2>
+            <TitleBlock title="Today’s Headlines"/>  
           <div className="block-content">
             <Headline likes="10.8k" dislikes="1.4k" time="2:00pm" labelText="BBC NEWS" thumbnail={image1} title="Hate speech vs free speech"/>
             <Headline likes="10.2k" dislikes="2.2k" time="2:20pm" labelText="BBC NEWS" thumbnail={image2} title="Ontario Liberal leadership"/>
@@ -129,7 +127,7 @@ function App() {
         </section>
         
         <section className="news">
-          <h2 className="block-title">Featured News</h2>
+          <TitleBlock title="Featured News"/>
           <div className="news-content">
             <News labelText="FOX NEWS" time="2:00pm" image={imgN1} title="Travellers to pay more than $2K, Trudeau says"/>
             <News labelText="CNN NEWS" time="2:30pm" image={imgN2} title="Myanmar’s military seizes control of country ov  er..."/>

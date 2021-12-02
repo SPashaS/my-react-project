@@ -1,0 +1,28 @@
+.titleBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.titleLink {
+    color: #503E9D;
+    padding-right: 21px;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.titleLink::before {
+    content: "";
+    background-image: url(./../../assets/images/title-block/arrowr.svg);
+    background-size: 12px 7.5px;
+    width: 12px;
+    height: 7.5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
