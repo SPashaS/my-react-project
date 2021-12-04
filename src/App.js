@@ -70,13 +70,13 @@ function App() {
           </a>
         </div>
         <nav className="menu">
-          <NavItem text="Home" icon={home}/>
-          <NavItem text="Explore" icon={explore}/>
-          <NavItem text="Saved" icon={saved}/>
-          <NavItem text="Subscriptions" icon={subscriptions}/>
-          <NavItem text="Messages" icon={messages}/>
-          <NavItem text="Settings" icon={settings} style={{marginBottom:"100px"}}/>
-          <NavItem text="Logout" icon={logout}/>
+          <NavItem text="Home"/>
+          <NavItem text="Explore"/>
+          <NavItem text="Saved"/>
+          <NavItem text="Subscriptions"/>
+          <NavItem text="Messages"/>
+          <NavItem text="Settings" style={{marginBottom:"100px"}}/>
+          <NavItem text="Logout"/>
         </nav>
         <div className="lines">
           <div className="line line--gray"></div>

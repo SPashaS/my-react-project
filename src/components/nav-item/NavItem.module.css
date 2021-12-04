@@ -19,6 +19,14 @@
     color: #878787;
 }
 
+.navItem:hover .navIcon  {
+    fill: #503E9D;
+}
+
+.navIcon {
+    fill: #878787;
+}
+
 .wrapper {
     display: flex;
     gap: 24px;
