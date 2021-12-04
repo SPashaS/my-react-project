@@ -12,14 +12,6 @@ import avatar from "./assets/images/header/ava.jpg";
 
 import logo from "./assets/images/logo.png";
 
-import home from "./assets/images/nav-item/home.svg";
-import explore from "./assets/images/nav-item/explore.svg";
-import saved from "./assets/images/nav-item/saved.svg";
-import subscriptions from "./assets/images/nav-item/subscriptions.svg";
-import messages from "./assets/images/nav-item/messages.svg";
-import settings from "./assets/images/nav-item/settings.svg";
-import logout from "./assets/images/nav-item/logout.svg";
-
 import close from "./assets/images/subscribe/close.svg";
 import flame from "./assets/images/subscribe/flame.svg";
 import subarr from "./assets/images/subscribe/arrow.svg";

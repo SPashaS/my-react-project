@@ -21,6 +21,7 @@
 
 .navItem:hover .navIcon  {
     fill: #503E9D;
+    transform: scale(1.1);
 }
 
 .navIcon {
