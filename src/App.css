@@ -60,6 +60,9 @@
 
 /* subscribe*/
 
+.subscribe-wrapper {
+    position: relative;
+}
 .subscribe {
     width: 240px;
     margin: 0 auto;
@@ -71,6 +74,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 3;
+}
+
+.subscribe-2 {
+    width: 208px;
+    height: 324px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 32px 96px rgba(0, 0, 0, 0.06);
+    z-index: 2;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.subscribe-3 {
+    width: 176px;
+    height: 324px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 32px 96px rgba(0, 0, 0, 0.06);
+    z-index: 1;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .subscribe-close {

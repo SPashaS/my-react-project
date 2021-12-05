@@ -75,21 +75,25 @@ function App() {
           <div className="line"></div>
         </div>
 
-        <div className="subscribe">
-          <button className="subscribe-close">
-            <img src={close}/>
-          </button>
-          <div className="flame">
-            <img src={flame}/>
+        <div className="subscribe-wrapper">
+          <div className="subscribe">
+            <button className="subscribe-close">
+              <img src={close}/>
+            </button>
+            <div className="flame">
+              <img src={flame}/>
+            </div>
+            <h2 className="subscribe-title">Subscribe to our new 
+            plan <span>$25</span>
+            </h2>
+            <p className="subscribe-text">It is a limited time offer that will expire soon.</p>
+            <button className="subscribe-btn btn btn--violet">
+              <span>Subscribe now</span>
+              <img src={subarr}/>
+            </button>
           </div>
-          <h2 className="subscribe-title">Subscribe to our new 
-          plan <span>$25</span>
-          </h2>
-          <p className="subscribe-text">It is a limited time offer that will expire soon.</p>
-          <button className="subscribe-btn btn btn--violet">
-            <span>Subscribe now</span>
-            <img src={subarr}/>
-          </button>
+          <div className="subscribe-2"></div>
+          <div className="subscribe-3"></div>
         </div>
 
       </asside>
